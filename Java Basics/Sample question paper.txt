@@ -1,0 +1,35 @@
+Computer Engineering (Semester 5)
+TOTAL MARKS: 100
+TOTAL TIME: 3 HOURS(1) Question 1 is compulsory.
+(2) Attempt any four from the remaining questions.
+(3) Assume data wherever required.
+(4) Figures to the right indicate full marks.
+1(a) Write a program that creates and initializes a four integer element array. Calculate and display the average of its values.(7 marks)
+1(b) Write a java program to do sum of command line argument passed two Double numbers.(7 marks)
+2(a) Define time class with hour and minute. Also define addition method to add two time objects.(7 marks)
+
+
+Solved any question Q.2(b) & Q.2(c)
+2(b) Explain use of Linked List collection class with example.(7 marks)
+2(c) Write a program to create circle class with area function to find area of circle.(7 marks)
+
+
+Solved any question from Q.3 & Q.4
+3(a) With example explain use of finally in exception handling.(7 marks)
+3(b) Write an application that searches through its command- line argument. If an argument is found that does not begin with and upper case letter, display error message and terminate.(7 marks)
+4(a) Explain garbage collection and finalize method in JAVA.(7 marks)
+4(b) Explain use of throw in exception handling with example.(7 marks)
+
+
+Solved any question from Q.5 & Q.6
+5(a) Explain constructor overloading using example(7 marks)
+5(b) Explain multi threading in java using example.(7 marks)
+6(a) Explain method overriding with example.(7 marks)
+6(b) Write an application that reads a file and counts the number of occurrences of digit 5. Supply the file name as a command-line argument.(7 marks)
+
+
+Solved any question from Q.7 & Q.8
+7(a) Draw use case diagram for Library Management System.(7 marks)
+7(b) Draw class diagram for online restaurant system.(7 marks)
+8(a) Draw sequence diagram for book issue process of library.(7 marks)
+8(b) Draw class diagram for ATM.(7 marks)

@@ -1,0 +1,60 @@
+											LAB-13
+
+(1) CREATE VIEW Personal
+    AS SELECT * FROM STUDENT;
+
+     EXECUTE-------SELECT * FROM PERSONAL
+
+
+(2) CREATE VIEW Student_Details
+    AS SELECT name,branch,spi FROM STUDENT;
+
+    EXECUTE-------SELECT * FROM Student_Details;
+
+
+(3) CREATE VIEW Academic
+    AS SELECT rno,name,branch FROM STUDENT;
+
+   EXECUTE-------SELECT * FROM Academic
+
+
+(4) CREATE VIEW Student_Data
+    AS SELECT * FROM STUDENT
+    WHERE bklog > 2;
+
+   EXECUTE-------SELECT * FROM Student_Data
+
+
+(5) CREATE VIEW Student_Pattern
+    AS SELECT rno,name.branch FROM STUDENT
+    WHERE name LIKE'____' ;
+
+   EXECUTE-------SELECT * FROM Student_Pattern
+
+
+(6) INSERT INTO Academic VALUES(107,'MEET','ME');      /*NOW IF YOU WILL EXECUTE THE MAIN TABLE IT WILL ALSO DISPLAY THE NEW RECORD INSERTED I.E 
+						         ANY CHANGE MADE TO THE VIEW ALSO REFLECTS THE MAIN TABLE*/
+   EXECUTE-------SELECT * FROM STUDENT;
+
+
+(7) UPDATE Student_Details SET branch='ME'
+    WHERE NAME='AMIT';
+
+   EXECUTE-------SELECT * FROM Student_Details && SELECT * FROM STUDENT
+
+
+(8) DELETE FROM Academic
+    WHERE RNO=104;
+
+  EXECUTE-------SELECT * FROM Academic && SELECT * FROM STUDENT
+
+
+(9) CREATE VIEW INFO
+    AS SELECT * FROM STUDENT
+    WHERE SPI>9.5;
+
+
+(10) CREATE VIEW DISPLAY
+    AS SELECT * FROM STUDENT
+    WHERE BKLOG=0;
+    

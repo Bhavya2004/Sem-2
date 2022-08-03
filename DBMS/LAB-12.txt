@@ -1,0 +1,49 @@
+									  LAB-12
+
+
+--STORED PROCEDURE--
+
+/*
+   CREATE PROCEDURE Procedure_Name
+   @VARIABLE DATATYPE (IF ANY)
+   AS
+   BEGIN
+	QUERY OR STATEMENT
+   END
+*/
+
+
+(1) CREATE PROCEDURE GetStudentDetail
+    AS
+    BEGIN
+    SELECT S.RNO,S.NAME,S.BRANCH,R.RESULT
+    FROM STUDENT S
+    FULL OUTER JOIN RESULT R
+    ON S.Rno = R.Rno
+    END
+
+  // HOW TO EXECUTE----- EXEC GetStudentDetails
+
+(2) CREATE PROCEDURE GetStudentDetailByRollNo
+    @Rno int
+    AS
+    BEGIN 
+    SELECT*FROM Student
+    WHERE Rno=@Rno
+    END
+
+   // HOW TO EXECUTE-----EXEC GetStudentDetailByRollNo 101
+
+(3) CREATE PROCEDURE StudentInsert
+    @Rno int
+    @Name varchar(50)
+    @Branch varchar(50)
+    AS
+    BEGIN
+    INSERT INTO STUDENT
+    (Rno,Name,Branch)
+    Values
+    (@Rno,@Name,@Branch)
+    END
+
+   // HOW TO EXECUTE-----EXEC StudentInsert 107,'Karan'.'CE'

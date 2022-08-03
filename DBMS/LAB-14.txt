@@ -1,0 +1,51 @@
+	 	 	 	 	 	 	  			LAB-14
+
+(1) DECLARE @no int              
+    SET @no=1
+    BEGIN
+	While(@no<=10)
+        BEGIN
+        Print @no
+	SET @no=@no+1
+        END
+    END
+
+
+(2) DECLARE @n int
+    SET @n=12
+    BEGIN
+        if @n%2=0
+          Print 'Even Number'
+        else
+	  Pint 'Odd Number'
+    END
+
+
+(3) DECLARE @a int
+    SET @a=1
+    BEGIN
+      While @a<=10
+    BEGIN
+         IF @a%2!=0
+         Print @a
+	 SET @a=@a+1
+	 END
+    END
+
+
+(7) CREATE TABLE Even_No(numbers int)
+    CREATE TABLE Odd_No(numbers int)
+    DECLARE @y int 
+    SET @y=1 
+    While(@y<=50)
+    BEGIN
+     if(@y%2=0)
+     	BEGIN
+       	insert into Even_No Values(@y)
+     	END
+     ELSE
+     BEGIN
+        insert into Odd_No Values(@y)
+     END
+     SET @y=@y+1
+     END
